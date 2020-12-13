@@ -5,3 +5,5 @@
 
 ## TOPOLOGI CPT
 ![img](/img/1.jpg)
+
+#### Kelompok kami mengerjakan teknik VLSM pada CPT, sedangkan teknik CIDR pada UML.
