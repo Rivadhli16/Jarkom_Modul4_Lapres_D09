@@ -419,5 +419,56 @@ auto eth0
 iface eth0 inet static
 address 10.151.79.86
 netmask 255.255.255.252
-gateway 10.151.73.85
+gateway 10.151.79.85
+```
+Lalu routing di Surabaya, Pasuruan, Batu, dan Kediri
 
+1. Surabaya
+
+```
+#pasuruan D2/18
+route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
+
+#batu D1/19
+route add -net 192.168.0.0 netmask 255.255.224.0 gw 192.168.32.2
+
+#malang
+route add -net 10.151.79.84 netmask 255.255.255.252 gw 192.168.32.2
+```
+
+2. Pasuruan
+
+```
+#probilinggo
+route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
+```
+
+3. Batu
+
+```
+#kediri
+route add -net 192.168.0.0 netmask 255.255.248.0 gw 192.168.8.2
+
+#malangikutkediri
+route add -net 10.151.79.84 netmask 255.255.255.252 gw 192.168.8.2
+
+#madiun
+route add -net 192.168.16.0 netmask 255.255.252.0 gw 192.168.18.3
+```
+
+4. Kediri
+
+```
+#blitar
+route add -net 192.168.0.0 netmask 255.255.248.0 gw 192.168.4.3
+```
+
+Setelah itu uncomment net.ipv4.ip_forward = 1 di `nano /etc/sysctl.conf` lalu ketikkan  `sysctl -p` dan enter pada semua router
+
+![img](/img/2-10.png)
+
+Lalu iptables di Surabaya
+
+![img](/img/2-11.png)
+
+Lalu testing dengan ping ke cloud, akan tetapi pada uml kami sepertinya masih ada kesalahan dan tidak bisa ping ke cloud dari uml yg tidak terhubung ke surabaya langsung
