@@ -62,3 +62,362 @@ Class G
 
 ![img](/img/2-7.png)
 
+Dari Subnetting di atas didapatkan Tree sebagai berikut
+
+![img](/img/2-8.png)
+
+Membuat topo.sh mengikuti topologi yang sudah diberikan
+
+![img](/img/2-9.png)
+
+Jalankan topo.sh, lalu kemudian isi /etc/network/interfaces seperti berikut
+
+1. Surabaya
+```
+auto lo
+iface lo inet loopback
+
+#cloud
+auto eth0
+iface eth0 inet static
+address 10.151.72.46
+netmask 255.255.255.252
+gateway 10.151.72.45
+ 
+#sampang
+auto eth1
+iface eth1 inet static
+address 192.168.64.1
+netmask 255.255.252.0
+ 
+#pasuruan
+auto eth2
+iface eth2 inet static
+address 192.168.192.1
+netmask 255.255.255.252
+ 
+#batu
+auto eth3
+iface eth3 inet static
+address 192.168.32.1
+netmask 255.255.255.252
+ 
+#mojokerto
+auto eth4
+iface eth4 inet static
+address 10.151.79.81
+netmask 255.255.255.252
+```
+2. Mojokerto
+
+```
+auto lo
+iface lo inet loopback
+
+#surabaya
+auto eth0
+iface eth0 inet static
+address 10.151.79.82
+netmask 255.255.255.252
+gateway 10.151.79.81
+```
+
+3. Pasuruan 
+```
+auto lo
+iface lo inet loopback
+
+#surabaya
+auto eth0
+iface eth0 inet static
+address 192.168.192.2
+netmask 255.255.255.252
+gateway 192.168.192.1
+ 
+#probolinggo
+auto eth1
+iface eth1 inet static
+address 192.168.144.1
+netmask 255.255.255.252
+ 
+#sidoarjo
+auto eth2
+iface eth2 inet static
+address 192.168.160.1
+netmask 255.255.252.0
+```
+
+4. Probolinggo
+
+```
+auto lo
+iface lo inet loopback
+ 
+#pasuruan
+auto eth0
+iface eth0 inet static
+address 192.168.144.2
+netmask 255.255.255.252
+gateway 192.168.144.1
+ 
+#bondowoso
+auto eth1
+iface eth1 inet static
+address 192.168.136.1
+netmask 255.255.255.128
+ 
+#jember&banyuwangi
+auto eth2
+iface eth2 inet static
+address 192.168.128.1
+netmask 255.255.248.0
+```
+
+5. Bondowoso
+
+```
+auto lo
+iface lo inet loopback
+ 
+#probolinggo
+auto eth0
+iface eth0 inet static
+address 192.168.136.2
+netmask 255.255.255.128
+gateway 192.168.136.1
+```
+
+6. Jember
+
+```
+auto lo
+iface lo inet loopback
+ 
+#probolinggo
+auto eth0
+iface eth0 inet static
+address 192.168.128.2
+netmask 255.255.248.0
+gateway 192.168.128.1
+```
+
+7. Banyuwangi
+
+```
+auto lo
+iface lo inet loopback
+ 
+#probolinggo
+auto eth0
+iface eth0 inet static
+address 192.168.128.3
+netmask 255.255.248.0
+gateway 192.168.128.1
+```
+
+8. Sidoarjo
+
+```
+auto lo
+iface lo inet loopback
+ 
+#pasuruan
+auto eth0
+iface eth0 inet static
+address 192.168.160.2
+netmask 255.255.252.0
+gateway 192.168.160.1
+```
+
+9. Sampang 
+
+```
+auto lo
+iface lo inet loopback
+ 
+#surabaya
+auto eth0
+iface eth0 inet static
+address 192.168.64.2
+netmask 255.255.252.0
+gateway 192.168.64.1
+```
+
+10. Batu
+
+```
+auto lo
+iface lo inet loopback
+ 
+#surabaya
+auto eth0
+iface eth0 inet static
+address 192.168.32.2
+netmask 255.255.255.252
+gateway 192.168.32.1
+ 
+#kediri
+auto eth1
+iface eth1 inet static
+address 192.168.8.1
+netmask 255.255.255.252
+ 
+#nganjuk
+auto eth2
+iface eth2 inet static
+address 192.168.20.1
+netmask 255.255.252.0
+ 
+#jombang
+auto eth3
+iface eth3 inet static
+address 192.168.18.1
+netmask 255.255.254.0
+```
+
+11. Nganjuk
+
+```
+auto lo
+iface lo inet loopback
+ 
+#batu
+auto eth0
+iface eth0 inet static
+address 192.168.20.2
+netmask 255.255.252.0
+gateway 192.168.20.1
+```
+
+12. Jombang
+
+```
+auto lo
+iface lo inet loopback
+ 
+#batu
+auto eth0
+iface eth0 inet static
+address 192.168.18.2
+netmask 255.255.254.0
+gateway 192.168.18.1
+```
+
+13. Madiun
+
+```
+auto lo
+iface lo inet loopback
+ 
+#bojonegoro
+auto eth0
+iface eth0 inet static
+address 192.168.16.1
+netmask 255.255.255.240
+ 
+#batu
+auto eth1
+iface eth1 inet static
+address 192.168.18.3
+netmask 255.255.254.0
+gateway 192.168.18.1
+```
+
+14. Kediri
+
+```
+auto lo
+iface lo inet loopback
+ 
+#batu
+auto eth0
+iface eth0 inet static
+address 192.168.8.2
+netmask 255.255.255.252
+gateway 192.168.8.1
+ 
+#lumajang
+auto eth1
+iface eth1 inet static
+address 192.168.4.1
+netmask 255.255.255.0
+ 
+#malang
+auto eth2
+iface eth2 inet static
+address 10.151.79.85
+netmask 255.255.255.252
+```
+
+15. Lumajang
+
+```
+auto lo
+iface lo inet loopback
+ 
+#kediri
+auto eth0
+iface eth0 inet static
+address 192.168.4.2
+netmask 255.255.255.0
+gateway 192.168.4.1
+```
+
+16. Blitar
+
+```
+auto lo
+iface lo inet loopback
+ 
+#tulungagung
+auto eth0
+iface eth0 inet static
+address 192.168.0.1
+netmask 255.255.252.0
+ 
+#kediri
+auto eth1
+iface eth1 inet static
+address 192.168.4.3
+netmask 255.255.255.0
+gateway 192.168.4.1
+```
+
+17.  Tulungagung
+
+```
+auto lo
+iface lo inet loopback
+ 
+#blitar
+auto eth0
+iface eth0 inet static
+address 192.168.0.2
+netmask 255.255.252.0
+gateway 192.168.0.1
+```
+
+18. Bojonegoro
+
+```
+auto lo
+iface lo inet loopback
+ 
+#madiun
+auto eth0
+iface eth0 inet static
+address 192.168.16.2
+netmask 255.255.255.240
+gateway 192.168.16.1
+```
+
+19. Malang
+
+```
+#kediri
+auto eth0
+iface eth0 inet static
+address 10.151.79.86
+netmask 255.255.255.252
+gateway 10.151.73.85
+
