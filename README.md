@@ -471,4 +471,8 @@ Lalu iptables di Surabaya
 
 ![img](/img/2-11.png)
 
-Lalu testing dengan ping ke cloud, akan tetapi pada uml kami sepertinya masih ada kesalahan dan tidak bisa ping ke cloud dari uml yg tidak terhubung ke surabaya langsung
+Lalu testing dengan ping ke cloud, akan tetapi pada uml kami sepertinya masih ada kesalahan dan tidak bisa ping ke cloud dari uml yangg tidak terhubung ke surabaya langsung
+Berikut beberapa uml yang bisa ping ke its.ac.id
+
+![img](/img/2-12.png)
+![img](/img/2-13.png)
