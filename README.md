@@ -30,7 +30,7 @@ Routing
 
 ![img](/img/1-6.jpg)
 
-## CIDR (Classles Inter-Dmain Routing)
+## CIDR (Classles Inter-Domain Routing)
 
 ### Pembagian Subnet 
 
