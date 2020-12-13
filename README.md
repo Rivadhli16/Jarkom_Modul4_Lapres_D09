@@ -20,7 +20,7 @@ Perhitungan total ip
 
 Pohon VLSM
 
-![img](/img/1-4.jpg)
+![img](/img/1-4.png)
 
 Pembagian NID
 
