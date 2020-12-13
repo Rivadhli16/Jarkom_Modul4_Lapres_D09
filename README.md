@@ -36,29 +36,29 @@ Routing
 
 Class A
 
-![img](/img/2-1.jpg)
+![img](/img/2-1.png)
 
 Class B
 
-![img](/img/2-2.jpg)
+![img](/img/2-2.png)
 
 Class C
 
-![img](/img/2-3.jpg)
+![img](/img/2-3.png)
 
 Class D
 
-![img](/img/2-4.jpg)
+![img](/img/2-4.png)
 
 Class E
 
-![img](/img/2-5.jpg)
+![img](/img/2-5.png)
 
 Class F
 
-![img](/img/2-6.jpg)
+![img](/img/2-6.png)
 
 Class G
 
-![img](/img/2-7.jpg)
+![img](/img/2-7.png)
 
