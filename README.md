@@ -80,9 +80,9 @@ iface lo inet loopback
 #cloud
 auto eth0
 iface eth0 inet static
-address 10.151.72.46
+address 10.151.78.42
 netmask 255.255.255.252
-gateway 10.151.72.45
+gateway 10.151.78.41
  
 #sampang
 auto eth1
