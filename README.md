@@ -9,4 +9,23 @@
 ### Kelompok kami mengerjakan teknik VLSM pada CPT, sedangkan teknik CIDR pada UML.
 
 ## VLSM (Variable Length Subnet Masking) - CPT
-![img](/img/2.jpg)
+
+Pembagian Tiap Subnet
+
+![img](/img/1-2.jpg)
+
+Perhitungan total ip
+
+![img](/img/1-3.jpg)
+
+Pohon VLSM
+
+![img](/img/1-4.jpg)
+
+Pembagian NID
+
+![img](/img/1-5.jpg)
+
+Routing
+
+![img](/img/1-6.jpg)
