@@ -29,3 +29,36 @@ Pembagian NID
 Routing
 
 ![img](/img/1-6.jpg)
+
+## CIDR (Classles Inter-Dmain Routing)
+
+### Pembagian Subnet 
+
+Class A
+
+![img](/img/2-1.jpg)
+
+Class B
+
+![img](/img/2-2.jpg)
+
+Class C
+
+![img](/img/2-3.jpg)
+
+Class D
+
+![img](/img/2-4.jpg)
+
+Class E
+
+![img](/img/2-5.jpg)
+
+Class F
+
+![img](/img/2-6.jpg)
+
+Class G
+
+![img](/img/2-7.jpg)
+
