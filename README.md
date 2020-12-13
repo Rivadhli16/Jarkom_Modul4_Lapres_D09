@@ -476,3 +476,6 @@ Berikut beberapa uml yang bisa ping ke its.ac.id
 
 ![img](/img/2-12.png)
 ![img](/img/2-13.png)
+![img](/img/2-14.png)
+![img](/img/2-15.png)
+![img](/img/2-16.png)
